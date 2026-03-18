@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Champion! 🎉</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Start Screen -->
+    <div id="start-screen" class="screen active">
+        <div class="glass-panel">
+            <h1>A Cinematic <span class="highlight">Birthday</span> Experience</h1>
+            <p>Join the champions.</p>
+            <button id="start-btn">Start Experience</button>
+        </div>
+    </div>
+
+    <!-- Main Experience -->
+    <div id="main-experience" class="screen">
+
+        <!-- Particle Canvas -->
+        <canvas id="particles-canvas"></canvas>
+
+        <!-- Slides Container -->
+        <div id="slides-container">
+            
+            <!-- Slide 1: Kaneki -->
+            <div class="slide character-slide active" id="slide-kaneki" data-idx="0">
+                <div class="character-wrapper">
+                    <img src="assets/kaneki.png" alt="Ken Kaneki" class="character-img" id="img-kaneki">
+                </div>
+                <div class="subtitle-box">
+                    <p class="subtitle-text" id="sub-kaneki"></p>
+                </div>
+            </div>
+
+            <!-- Slide 2: Tanjiro -->
+            <div class="slide character-slide" id="slide-tanjiro" data-idx="1">
+                <div class="character-wrapper">
+                    <img src="assets/tanjiro.png" alt="Tanjiro Kamado" class="character-img" id="img-tanjiro">
+                </div>
+                <div class="subtitle-box">
+                    <p class="subtitle-text" id="sub-tanjiro"></p>
+                </div>
+            </div>
+
+            <!-- Slide 3: Sung Jin-Woo -->
+            <div class="slide character-slide" id="slide-jinwoo" data-idx="2">
+                <div class="character-wrapper">
+                    <img src="assets/jinwoo.png" alt="Sung Jin-Woo" class="character-img" id="img-jinwoo">
+                </div>
+                <div class="subtitle-box">
+                    <p class="subtitle-text" id="sub-jinwoo"></p>
+                </div>
+            </div>
+
+            <!-- Slide 4: Po -->
+            <div class="slide character-slide" id="slide-po" data-idx="3">
+                <div class="character-wrapper">
+                    <img src="assets/po.png" alt="Po" class="character-img" id="img-po">
+                </div>
+                <div class="subtitle-box">
+                    <p class="subtitle-text" id="sub-po"></p>
+                </div>
+            </div>
+
+            <!-- Slide 5: Minions -->
+            <div class="slide character-slide" id="slide-minion" data-idx="4">
+                <div class="character-wrapper">
+                    <img src="assets/minion.png" alt="Minion" class="character-img" id="img-minion">
+                </div>
+                <div class="subtitle-box">
+                    <p class="subtitle-text" id="sub-minion"></p>
+                </div>
+            </div>
+
+            <!-- Slide 6: Madagascar -->
+            <div class="slide character-slide" id="slide-madagascar" data-idx="5">
+                <div class="character-wrapper">
+                    <img src="assets/madagascar.png" alt="Madagascar Cast" class="character-img" id="img-madagascar">
+                </div>
+                <div class="subtitle-box">
+                    <p class="subtitle-text" id="sub-madagascar"></p>
+                </div>
+            </div>
+
+            <!-- Slide 7: Final Scene -->
+            <div class="slide final-slide" id="slide-final" data-idx="6">
+                <canvas id="confetti-canvas"></canvas>
+                <div class="final-characters">
+                    <img src="assets/kaneki.png" class="final-char" id="final-kaneki" alt="">
+                    <img src="assets/tanjiro.png" class="final-char" id="final-tanjiro" alt="">
+                    <img src="assets/jinwoo.png" class="final-char" id="final-jinwoo" alt="">
+                    <img src="assets/po.png" class="final-char" id="final-po" alt="">
+                    <img src="assets/minion.png" class="final-char" id="final-minion" alt="">
+                    <img src="assets/madagascar.png" class="final-char" id="final-madagascar" alt="">
+                </div>
+                <div class="final-message-box">
+                    <h1 class="final-message">Happy Birthday Champion! <span class="party-popper">🎉</span></h1>
+                    <p class="final-submessage">You are strong, kind, and unstoppable!</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Next Button for User Manual Control -->
+    <button id="next-btn" class="hidden">Next ➔</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
